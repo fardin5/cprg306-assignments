@@ -10,7 +10,7 @@ export default function NewItem({items, onAddItem}) {
   const [category, setCategory] = useState('produce');
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault();     
     const newItem = {
       name,
       quantity,

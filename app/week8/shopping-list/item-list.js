@@ -3,11 +3,11 @@ import Item from './item.js';
 import React, { useState, useEffect } from 'react';
 
 export default function ItemList({ items, onItemSelect }) {
-
+  // sortBy constant and itemsList
   const [sortBy, setSortBy] = useState('name');
   const [itemsList, setItemsList] = useState(items);
 
-
+  // useEffect keeps track of sortBy to display the list
   useEffect(() => {
     if (sortBy === 'name') {
       const sortByName = [...itemsList].sort((a, b) => a.name.localeCompare(b.name));
@@ -18,7 +18,7 @@ export default function ItemList({ items, onItemSelect }) {
     }
   }, [sortBy]);
 
-
+  // sortItem function is used to change sortBy
   const sortItem = (option) => {
     setSortBy(option);
   };
@@ -46,4 +46,3 @@ export default function ItemList({ items, onItemSelect }) {
     </div>
   );
 }
-
