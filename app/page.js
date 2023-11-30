@@ -7,7 +7,8 @@ export default function Home() {
             <p>Name: Fardin Abdul</p>
             <p>CPRG 306 D</p>
             <p>
-                <Link href="https://github.com/fardin5">github</Link>
+                <Link href="https://github.com/fardin5">
+                  github</Link>
             </p>
             <p>
               <Link href= "/week2">week2
@@ -37,6 +38,10 @@ export default function Home() {
               <Link href= "/week9">week8
                 </Link> 
             </p>
+            <p>
+              <Link href="/week10">Week10
+              </Link>
+              </p>
         </div>
 </>
   )
